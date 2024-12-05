@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfbd23e1-2fe9-40e1-b796-1f41f06dfa69" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingTitlePane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/view/CurrenciesDialog.java" afterDir="false" />
+    <list default="true" id="dfbd23e1-2fe9-40e1-b796-1f41f06dfa69" name="Changes" comment="Minor fixes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingCurrencyDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMoneyDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/view/CurrencyDialog.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/view/MoneyDialog.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/view/MoneyDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/CurrencyDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/CurrencyDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/FixerCurrencyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/FixerCurrencyReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingTitlePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingTitlePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/model/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/model/Money.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,9 @@
     &quot;accountId&quot;: &quot;6392d2d1-65ac-4016-8d35-abac62518e94&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -78,6 +82,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="software.ulpgc.moneycalculator.app" />
       <recent name="software.ulpgc.moneycalculator.control" />
       <recent name="software.ulpgc.moneycalculator" />
     </key>
@@ -118,7 +123,7 @@
       <workItem from="1733225496522" duration="185000" />
       <workItem from="1733245222993" duration="995000" />
       <workItem from="1733339720519" duration="518000" />
-      <workItem from="1733430311725" duration="843000" />
+      <workItem from="1733430311725" duration="5782000" />
     </task>
     <task id="LOCAL-00001" summary="Primera versión que lee nombres de monedas">
       <option name="closed" value="true" />
@@ -128,14 +133,79 @@
       <option name="project" value="LOCAL" />
       <updated>1732924721979</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Minor fixes">
+      <option name="closed" value="true" />
+      <created>1733436612074</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733436612074</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Minor fixes">
+      <option name="closed" value="true" />
+      <created>1733436735937</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733436735937</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primera versión que lee nombres de monedas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primera versión que lee nombres de monedas" />
+    <MESSAGE value="Minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes" />
   </component>
 </project>

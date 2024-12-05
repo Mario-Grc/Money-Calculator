@@ -1,4 +1,4 @@
 package software.ulpgc.moneycalculator.model;
 
-public class Money {
+public record Money(Double amount, Currency currency) {
 }
