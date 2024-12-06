@@ -1,4 +1,4 @@
-package software.ulpgc.moneycalculator.io;
+package software.ulpgc.moneycalculator.io.currency;
 
 import com.google.gson.Gson;
 import software.ulpgc.moneycalculator.pojos.CurrencySymbolsGetResponse;

@@ -1,8 +1,8 @@
-package software.ulpgc.moneycalculator.io;
+package software.ulpgc.moneycalculator.io.currency;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
-import software.ulpgc.moneycalculator.FixerAPI;
+import software.ulpgc.moneycalculator.io.FixerAPI;
 
 import java.io.IOException;
 

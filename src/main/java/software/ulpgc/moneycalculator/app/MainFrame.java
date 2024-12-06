@@ -2,9 +2,12 @@ package software.ulpgc.moneycalculator.app;
 
 import software.ulpgc.moneycalculator.control.Command;
 import software.ulpgc.moneycalculator.model.Currency;
+import software.ulpgc.moneycalculator.model.Money;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +17,7 @@ public class MainFrame extends JFrame {
     private final List<Currency> currencies;
     private SwingCurrencyDialog currencyDialog;
     private SwingMoneyDialog moneyDialog;
+    private SwingMoneyDisplay moneyDisplay;
 
     public MainFrame(List<Currency> currencies) {
         this.currencies = currencies;
@@ -26,16 +30,37 @@ public class MainFrame extends JFrame {
         this.getContentPane().setBackground(Color.DARK_GRAY);
         this.commands = new HashMap<>();
         this.add(titlePane());
-        this.add(centerPanel());
+        this.add(centerPane());
+        this.add(lowerPane());
     }
 
-    private Component centerPanel() {
+    private Component lowerPane() {
+        JPanel panel = new JPanel();
+        panel.setBackground(Color.DARK_GRAY);
+        panel.setLayout(new FlowLayout(FlowLayout.CENTER));
+        panel.add(moneyDisplay = new SwingMoneyDisplay());
+        panel.add(createCalculateButton("Calculate"));
+        return panel;
+    }
+
+    private Component createCalculateButton(String name) {
+        JButton button = new JButton(name);
+        button.setFont(new Font("Arial", Font.PLAIN, 12));
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                commands.get(name).execute();
+            }
+        });
+        return button;
+    }
+
+    private Component centerPane() {
         JPanel panel = new JPanel();
         panel.setBackground(Color.DARK_GRAY);
         panel.setLayout(new FlowLayout(FlowLayout.CENTER));
         panel.add(moneyDialog = new SwingMoneyDialog(new SwingCurrencyDialog(currencies)));
         panel.add(currencyDialog = new SwingCurrencyDialog(currencies));
-
         return panel;
     }
 

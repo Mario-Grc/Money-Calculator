@@ -1,4 +1,4 @@
 package software.ulpgc.moneycalculator.model;
 
-public class ExchangeRate {
+public record ExchangeRate(Currency from, Currency to, double rate){
 }

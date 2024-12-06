@@ -1,4 +1,4 @@
-package software.ulpgc.moneycalculator;
+package software.ulpgc.moneycalculator.io;
 
 public class FixerAPI {
     public static final String key = "5bb419a809e62ec0554bd54bbd7b0f03";

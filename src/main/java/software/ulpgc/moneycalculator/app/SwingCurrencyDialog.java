@@ -19,8 +19,6 @@ public class SwingCurrencyDialog extends JPanel implements CurrencyDialog {
 
     private JComboBox<Currency> comboCurrency() {
         JComboBox<Currency> comboBox = new JComboBox<>();
-//        comboBox.setBackground(Color.DARK_GRAY);
-//        comboBox.setForeground(Color.WHITE);
         for (Currency currency : currencies) {
             comboBox.addItem(currency);
         }

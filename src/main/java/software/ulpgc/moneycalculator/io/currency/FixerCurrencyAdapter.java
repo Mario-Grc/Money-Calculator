@@ -1,4 +1,4 @@
-package software.ulpgc.moneycalculator.io;
+package software.ulpgc.moneycalculator.io.currency;
 
 import software.ulpgc.moneycalculator.model.Currency;
 import software.ulpgc.moneycalculator.pojos.CurrencySymbolsGetResponse;
@@ -19,7 +19,7 @@ public class FixerCurrencyAdapter implements CurrencyAdapter {
         for (Map.Entry<String, String> entry : response.symbols().entrySet()) {
             currencies.add(new Currency(entry.getKey(), entry.getValue()));
         }
-        currencies.sort((c1, c2) -> c1.getName().compareTo(c2.getName()));
+        currencies.sort(Comparator.comparing(Currency::name));
         return currencies;
     }
 }
