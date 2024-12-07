@@ -2,7 +2,6 @@ package software.ulpgc.moneycalculator.app;
 
 import software.ulpgc.moneycalculator.control.Command;
 import software.ulpgc.moneycalculator.model.Currency;
-import software.ulpgc.moneycalculator.model.Money;
 
 import javax.swing.*;
 import java.awt.*;
@@ -68,4 +67,19 @@ public class MainFrame extends JFrame {
         return new SwingTitlePane();
     }
 
+    public void put(String name, Command command) {
+        commands.put(name, command);
+    }
+
+    public SwingCurrencyDialog getCurrencyDialog() {
+        return currencyDialog;
+    }
+
+    public SwingMoneyDialog getMoneyDialog() {
+        return moneyDialog;
+    }
+
+    public SwingMoneyDisplay getMoneyDisplay() {
+        return moneyDisplay;
+    }
 }
