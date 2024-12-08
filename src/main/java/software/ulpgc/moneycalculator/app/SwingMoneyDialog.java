@@ -18,13 +18,13 @@ public class SwingMoneyDialog extends JPanel implements MoneyDialog {
 
     private JTextField amountField() {
         JTextField amountField = new JTextField(10);
-        amountField.setFont(new Font("arial", Font.PLAIN, 12));
+        amountField.setFont(new Font("arial", Font.PLAIN, 12)); // TODO filtro para solo poner números
         return amountField;
     }
 
     @Override
     public Money get() {
-        return new Money(stringToInteger(amountField.getText()), currencyDialog.get());
+        return new Money(stringToInteger(amountField.getText()), currencyDialog.get()); // TODO manejar error cuando String vacía
     }
 
     private double stringToInteger(String string) {
