@@ -5,8 +5,6 @@ import software.ulpgc.moneycalculator.model.Currency;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,13 +42,8 @@ public class MainFrame extends JFrame {
 
     private Component createCalculateButton(String name) {
         JButton button = new JButton(name);
-        button.setFont(new Font("Arial", Font.BOLD, 12));
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                commands.get(name).execute();
-            }
-        });
+        button.setFont(new Font("Arial", Font.PLAIN, 12));
+        button.addActionListener(e -> commands.get(name).execute());
         return button;
     }
 

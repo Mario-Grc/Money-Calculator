@@ -24,10 +24,10 @@ public class SwingMoneyDialog extends JPanel implements MoneyDialog {
 
     @Override
     public Money get() {
-        return new Money(stringToInteger(amountField.getText()), currencyDialog.get()); // TODO manejar error cuando String vacía
+        return new Money(stringToDouble(amountField.getText()), currencyDialog.get()); // TODO manejar error cuando String vacía
     }
 
-    private double stringToInteger(String string) {
+    private double stringToDouble(String string) {
         return Double.parseDouble(string);
     }
 }

@@ -11,13 +11,13 @@ public class SwingMoneyDisplay extends JPanel implements MoneyDisplay {
 
     public SwingMoneyDisplay() {
         this.add(moneyLabel = createLabel());
-        this.setBackground(Color.WHITE);
+        this.setBackground(Color.DARK_GRAY);
     }
 
     private JLabel createLabel() {
         JLabel label = new JLabel();
         label.setFont(new Font("Arial", Font.PLAIN, 12));
-        label.setForeground(Color.BLACK);
+        label.setForeground(Color.WHITE);
         return label;
     }
 

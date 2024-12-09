@@ -26,10 +26,13 @@ public class FixerExchangeRateLoader implements ExchangeRateLoader {
         } else if (to.code().equals(BASE_CURRENCY)) {
             return new ExchangeRate(from, to, 1 / rates.get(from.code()));
         } else {
-            double rateFromToEur = 1 / rates.get(from.code());
-            double rateEurToTo = rates.get(to.code());
-            double rateFromToTo = rateFromToEur * rateEurToTo;
-            return new ExchangeRate(from, to, rateFromToTo);
+            return new ExchangeRate(from, to, calculateRate(from, to, rates));
         }
+    }
+
+    private static double calculateRate(Currency from, Currency to, Map<String, Double> rates) {
+        double rateFromToBase = 1 / rates.get(from.code());
+        double rateBaseToTarget = rates.get(to.code());
+        return rateFromToBase * rateBaseToTarget;
     }
 }

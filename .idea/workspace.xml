@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfbd23e1-2fe9-40e1-b796-1f41f06dfa69" name="Changes" comment="Core functionalities implemented">
+    <list default="true" id="dfbd23e1-2fe9-40e1-b796-1f41f06dfa69" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingCurrencyDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingCurrencyDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMoneyDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMoneyDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMoneyDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMoneyDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/exchangeRate/FixerExchangeRateLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/exchangeRate/FixerExchangeRateLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mario/Downloads/money-calculator&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Otros ordenadores/Mi portátil/Año_3/1ºSemestre/IS2/Práctica/kata3&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -85,8 +86,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -123,7 +124,12 @@
       <workItem from="1733513511836" duration="7596000" />
       <workItem from="1733564215037" duration="6073000" />
       <workItem from="1733666266455" duration="729000" />
-      <workItem from="1733677417671" duration="1885000" />
+      <workItem from="1733677417671" duration="1969000" />
+      <workItem from="1733680953243" duration="26000" />
+      <workItem from="1733757603430" duration="2436000" />
+      <workItem from="1733761617097" duration="58000" />
+      <workItem from="1733762522308" duration="893000" />
+      <workItem from="1733766887288" duration="2711000" />
     </task>
     <task id="LOCAL-00001" summary="Primera versión que lee nombres de monedas">
       <option name="closed" value="true" />
@@ -173,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733571690242</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed the Swing font of some text">
+      <option name="closed" value="true" />
+      <created>1733679367560</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733679367560</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +247,7 @@
     <MESSAGE value="MoneyDialog and CurrencyDialog added to MainFrame" />
     <MESSAGE value="MoneyDisplay added, other minor improvements" />
     <MESSAGE value="Core functionalities implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Core functionalities implemented" />
+    <MESSAGE value="Changed the Swing font of some text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the Swing font of some text" />
   </component>
 </project>
