@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfbd23e1-2fe9-40e1-b796-1f41f06dfa69" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dfbd23e1-2fe9-40e1-b796-1f41f06dfa69" name="Changes" comment="Minor improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMoneyDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMoneyDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMoneyDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/app/SwingMoneyDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/exchangeRate/ExchangeRateDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/exchangeRate/ExchangeRateDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/exchangeRate/FixerExchangeRateDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/exchangeRate/FixerExchangeRateDeserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/exchangeRate/FixerExchangeRateLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/moneycalculator/io/exchangeRate/FixerExchangeRateLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +60,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Otros ordenadores/Mi portátil/Año_3/1ºSemestre/IS2/Práctica/kata3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/UNIVERSIDAD/Año_3/1ºSemestre/IS2/Práctica/MoneyCalculator&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -129,7 +127,14 @@
       <workItem from="1733757603430" duration="2436000" />
       <workItem from="1733761617097" duration="58000" />
       <workItem from="1733762522308" duration="893000" />
-      <workItem from="1733766887288" duration="2711000" />
+      <workItem from="1733766887288" duration="2879000" />
+      <workItem from="1733771024132" duration="393000" />
+      <workItem from="1733825871116" duration="321000" />
+      <workItem from="1733827560910" duration="168000" />
+      <workItem from="1733828030855" duration="2120000" />
+      <workItem from="1733850657778" duration="1201000" />
+      <workItem from="1733936448827" duration="685000" />
+      <workItem from="1733938401222" duration="1195000" />
     </task>
     <task id="LOCAL-00001" summary="Primera versión que lee nombres de monedas">
       <option name="closed" value="true" />
@@ -187,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733679367560</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Minor improvements">
+      <option name="closed" value="true" />
+      <created>1733769905241</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733769905241</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +261,7 @@
     <MESSAGE value="MoneyDisplay added, other minor improvements" />
     <MESSAGE value="Core functionalities implemented" />
     <MESSAGE value="Changed the Swing font of some text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the Swing font of some text" />
+    <MESSAGE value="Minor improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor improvements" />
   </component>
 </project>

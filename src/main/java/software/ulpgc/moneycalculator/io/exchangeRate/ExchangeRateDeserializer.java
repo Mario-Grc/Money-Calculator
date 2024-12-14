@@ -1,5 +1,7 @@
 package software.ulpgc.moneycalculator.io.exchangeRate;
 
+import software.ulpgc.moneycalculator.pojos.ExchangeRatesGetResponse;
+
 public interface ExchangeRateDeserializer {
-    Object deserialize(String read);
+    ExchangeRatesGetResponse deserialize(String read);
 }

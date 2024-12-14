@@ -2,7 +2,6 @@ package software.ulpgc.moneycalculator.io.exchangeRate;
 
 import software.ulpgc.moneycalculator.model.Currency;
 import software.ulpgc.moneycalculator.model.ExchangeRate;
-import software.ulpgc.moneycalculator.pojos.ExchangeRatesGetResponse;
 
 import java.util.Map;
 
@@ -19,7 +18,7 @@ public class FixerExchangeRateLoader implements ExchangeRateLoader {
 
     @Override
     public ExchangeRate load(Currency from, Currency to) {
-        Map<String, Double> rates = ((ExchangeRatesGetResponse) deserializer.deserialize(reader.read())).rates();
+        Map<String, Double> rates = (deserializer.deserialize(reader.read())).rates();
 
         if (from.code().equals(BASE_CURRENCY)) {
             return new ExchangeRate(from, to, rates.get(to.code()));
